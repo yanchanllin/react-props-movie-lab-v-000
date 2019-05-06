@@ -42,7 +42,7 @@ export default class MovieCard extends Component {
     return posterUrl
     }
 
-    
+
     return (
       <div className="movie-card">
         <CardFront poster={getRightPoster()}/>
