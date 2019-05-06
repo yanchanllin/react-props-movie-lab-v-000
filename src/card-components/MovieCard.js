@@ -30,6 +30,19 @@ const posterMap = {
 export default class MovieCard extends Component {
 
   render() {
+    const rightPoster = this.props.poster;
+    const getRightPoster = function() {
+      let posterUrl = '';
+      Object.entries(posterMap).forEach(function(value,key){
+        if(value[0]===correctPoster) {
+          posterUrl = value[1]
+        }
+      }
+    )
+    return posterUrl
+    }
+
+    
     return (
       <div className="movie-card">
         <CardFront poster={getRightPoster()}/>
